@@ -1,0 +1,14 @@
+.s-body-circle img {
+  border-radius: 50%;
+  border: solid 2px #26a69a;
+  width: 140px;
+  height: 140px;
+}
+
+.heart-text {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: rgb(240, 233, 233);
+  font-size: 1.1em;
+  padding-top: 15px;
+  background-color: #26a69a;
+}

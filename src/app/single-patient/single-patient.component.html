@@ -1,0 +1,64 @@
+<header>
+  <nav class="navbar navbar-expand-sm bg-1 navbar-dark">
+    <!-- Brand/logo -->
+    <a class="navbar-brand m-l-20" href="#">Logo</a>
+
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 3</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="my-card1">
+          <div class="row">
+            <div class="col-md-6 text-center">
+              <user-image></user-image>
+
+            </div>
+            <div class="col-md-6 text-center">
+              <app-user-details></app-user-details>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-3">
+        <div class="my-card2">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <app-heart-rate></app-heart-rate>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-3 text-center">
+        <app-respiration-rate></app-respiration-rate>
+      </div>
+
+
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <app-ppg-graph></app-ppg-graph>
+      </div>
+      <div class="col-md-6">
+        <app-tem-graph></app-tem-graph>
+      </div>
+    </div>
+  </div>
+
+</section>

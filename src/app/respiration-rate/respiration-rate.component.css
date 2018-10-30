@@ -1,0 +1,70 @@
+.my-card2 {
+  width: 100%;
+  height: 200px;
+  border-radius: 4px;
+  margin-top: 30px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.s-body-circle {
+  border-radius: 50%;
+  border: solid 2px #26a69a;
+  width: 140px;
+  height: 140px;
+  padding-top: 20px;
+}
+
+.s-body-circle img {
+  height: 40px;
+  width: 40px;
+}
+
+.res-text {
+  color: #26a69a;
+  font-size: 2.4em;
+}
+
+.fa-beat {
+  animation: fa-beat 3s ease infinite;
+  /* background-color:#fff; */
+}
+
+@keyframes fa-beat {
+  0% {
+    transform: scale(1);
+  }
+  5% {
+    transform: scale(1.25);
+  }
+  20% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1);
+  }
+  35% {
+    transform: scale(1.25);
+  }
+  50% {
+    transform: scale(1);
+  }
+  55% {
+    transform: scale(1.25);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+
+.heart-text {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: #666;
+  font-size: 1.1em;
+  padding-top: 15px;
+  background-color: rgb(214, 203, 203);
+  width: 100%;
+  border-radius: 0 0 4px 4px;
+}

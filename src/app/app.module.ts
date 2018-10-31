@@ -14,6 +14,9 @@ import { RespirationRateComponent } from "./respiration-rate/respiration-rate.co
 import { TemGraphComponent } from "./tem-graph/tem-graph.component";
 import { UserDetailsComponent } from "./user-details/user-details.component";
 import { UserImageComponent } from "./user-image/user-image.component";
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { PatientsComponent } from './patients/patients.component';
+import { PatientTabComponent } from './patient-tab/patient-tab.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { UserImageComponent } from "./user-image/user-image.component";
     RespirationRateComponent,
     TemGraphComponent,
     UserDetailsComponent,
-    UserImageComponent
+    UserImageComponent,
+    NavBarComponent,
+    PatientsComponent,
+    PatientTabComponent
   ],
   imports: [BrowserModule, PlotlyModule, AngularFontAwesomeModule],
   providers: [],

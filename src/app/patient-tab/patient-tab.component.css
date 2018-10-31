@@ -1,0 +1,23 @@
+.my-card3 {
+  width: 100%;
+  border-radius: 4px;
+  margin-top: 30px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.s-body-circle img {
+  border-radius: 50%;
+  border: solid 2px #26a69a;
+  width: 60px;
+  height: 60px;
+}
+
+.s-body {
+  padding: 15px;
+}
+
+.s-footer {
+  background-color: #ddd;
+  padding: 10px 15px;
+}

@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-respiration-rate',
-  templateUrl: './respiration-rate.component.html',
-  styleUrls: ['./respiration-rate.component.css']
+  selector: "app-respiration-rate",
+  templateUrl: "./respiration-rate.component.html",
+  styleUrls: ["./respiration-rate.component.css"]
 })
 export class RespirationRateComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

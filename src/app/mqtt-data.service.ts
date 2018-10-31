@@ -18,11 +18,11 @@ export class MqttDataService implements OnInit {
   constructor() {
     // this.data = Data.getInstance();
 
-    this.client = new Paho.MQTT.Client(
-      "broker.mqttdashboard.com",
-      8000,
-      "yan-thiyan10"
-    );
+    // this.client = new Paho.MQTT.Client(
+    //   "broker.mqttdashboard.com",
+    //   8000,
+    //   "yan-thiyan10"
+    // );
     this.onMessage();
     this.onConnectionLost();
     this.client.connect({ onSuccess: this.onConnected.bind(this) });

@@ -10,10 +10,10 @@ import { HeartRateComponent } from "./heart-rate/heart-rate.component";
 import { AngularFontAwesomeModule } from "angular-font-awesome";
 import { SinglePatientComponent } from "./single-patient/single-patient.component";
 import { RespirationRateComponent } from "./respiration-rate/respiration-rate.component";
-import { MqttDataService } from "./services/mqtt-data.service";
-import { TemGraphComponent } from './tem-graph/tem-graph.component';
-import { UserDetailsComponent } from './user-details/user-details.component';
-import { UserImageComponent } from './user-image/user-image.component';
+
+import { TemGraphComponent } from "./tem-graph/tem-graph.component";
+import { UserDetailsComponent } from "./user-details/user-details.component";
+import { UserImageComponent } from "./user-image/user-image.component";
 
 @NgModule({
   declarations: [
@@ -28,7 +28,7 @@ import { UserImageComponent } from './user-image/user-image.component';
     UserImageComponent
   ],
   imports: [BrowserModule, PlotlyModule, AngularFontAwesomeModule],
-  providers: [MqttDataService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

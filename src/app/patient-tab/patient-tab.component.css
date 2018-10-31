@@ -8,7 +8,7 @@
 
 .s-body-circle img {
   border-radius: 50%;
-  border: solid 2px #26a69a;
+  border: solid 2px #86ada9;
   width: 60px;
   height: 60px;
 }
@@ -20,4 +20,32 @@
 .s-footer {
   background-color: #ddd;
   padding: 10px 15px;
+  text-align: right;
+}
+.s-footer span {
+  padding-right: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.user-name {
+  font-family: Roboto;
+  font-size: 1.4em;
+  color: rgb(75, 78, 82);
+}
+
+.age {
+  font-family: Roboto;
+  font-size: 0.8em;
+  color: rgba(75, 78, 82, 0.657);
+}
+
+.fa-angle-right {
+  color: rgba(75, 78, 82, 0.404);
+  font-size: 1.8em;
+}
+.see {
+  color: rgba(22, 40, 97, 0.801) 9;
 }

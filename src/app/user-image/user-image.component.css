@@ -10,8 +10,8 @@
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   color: rgb(112, 105, 105);
   font-size: 1.1em;
-  padding-top: 15px;
-  background-color: #26a69a;
+  padding-top: 0px;
+  /* background-color: #26a69a; */
   border-radius: 0 0 0px 4px;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
 }

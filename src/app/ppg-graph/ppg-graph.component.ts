@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from "@angular/core";
 import { Chart } from "chart.js";
-import { tick } from "@angular/core/src/render3";
+import { delay } from "rxjs/operators";
 
 @Component({
   selector: "app-ppg-graph",
@@ -11,23 +11,20 @@ export class PpgGraphComponent implements OnInit {
   @ViewChild("lineChart")
   private chartRef;
   chart: any;
-  a = 30;
+  a = 36.5;
 
-  dataPoints = [
-    { x: new Date(), y: 10 },
-    { x: new Date(), y: 20 },
-    { x: new Date(), y: 25 }
-  ];
+  dataPoints = [{ x: new Date(), y: 36.5 }];
 
   constructor() {}
 
   ngOnInit() {
     this.draw();
+    this.add();
   }
 
   onClick() {
     console.log("Button Clicked");
-    this.dataPoints.push({ x: new Date(), y: this.a + 0.5 });
+    this.dataPoints.push({ x: new Date(), y: this.a });
     console.log(this.dataPoints);
     this.chart.update();
     // this.c+=1;
@@ -35,6 +32,41 @@ export class PpgGraphComponent implements OnInit {
     // this.a.push(this.c);
     // this.b.push(this.d);
     // this.basicChart();
+  }
+
+  add() {
+    delay(200);
+    this.dataPoints.push({ x: new Date(), y: 400 });
+    this.chart.update();
+    delay(200);
+
+    this.dataPoints.push({ x: new Date(), y: 337 });
+    this.chart.update();
+    delay(200);
+
+    this.dataPoints.push({ x: new Date(), y: 573 });
+    this.chart.update();
+    delay(200);
+
+    this.dataPoints.push({ x: new Date(), y: 445 });
+    this.chart.update();
+    delay(200);
+
+    this.dataPoints.push({ x: new Date(), y: 650 });
+    this.chart.update();
+    delay(200);
+
+    this.dataPoints.push({ x: new Date(), y: 720 });
+    this.chart.update();
+    delay(200);
+
+    this.dataPoints.push({ x: new Date(), y: 448 });
+    this.chart.update();
+    delay(200);
+
+    this.dataPoints.push({ x: new Date(), y: 589 });
+    this.chart.update();
+    delay(200);
   }
 
   draw() {

@@ -1,3 +1,4 @@
+import { delay } from "rxjs/operators";
 import { Component, OnInit, ViewChild } from "@angular/core";
 import * as Chart from "chart.js";
 
@@ -10,18 +11,21 @@ export class TemGraphComponent implements OnInit {
   @ViewChild("lineChart")
   private chartRef;
   chart: any;
-  a = 30;
+  a = 36.5;
 
   dataPoints = [
-    { x: new Date(), y: 10 },
-    { x: new Date(), y: 20 },
-    { x: new Date(), y: 25 }
+    {
+      x: new Date(),
+      y: 36.5
+    }
   ];
 
   constructor() {}
 
   ngOnInit() {
     this.draw();
+    delay(2000);
+    this.add();
   }
 
   onClick() {
@@ -29,6 +33,18 @@ export class TemGraphComponent implements OnInit {
     this.dataPoints.push({ x: new Date(), y: this.a + 0.5 });
     console.log(this.dataPoints);
     this.chart.update();
+    // this.c+=1;
+    // this.d*=3;;
+    // this.a.push(this.c);
+    // this.b.push(this.d);
+    // this.basicChart();
+  }
+
+  add() {
+    delay(1000);
+    this.dataPoints.push({ x: new Date(), y: this.a });
+    this.chart.update();
+
     // this.c+=1;
     // this.d*=3;;
     // this.a.push(this.c);

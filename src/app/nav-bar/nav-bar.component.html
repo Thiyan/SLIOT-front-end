@@ -17,25 +17,26 @@
   </ul>
 </nav> -->
 
+<header>
+  <nav class="navbar navbar-expand-lg bg-1 navbar-dark">
 
-<nav class="navbar navbar-expand-lg bg-1 navbar-dark">
-
-  <a class="navbar-brand m-l-20" href="#"> <img src="assets/mm.png" class="header-logo" /> SC</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Wards</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Settings</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+    <a class="navbar-brand m-l-20" routerLink="/"> <img src="assets/mm.png" class="header-logo" /> SC</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link" routerLink="/">Home </a>
+        </li>
+        <li class="nav-item" routerLinkActive="active current">
+          <a class="nav-link" routerLink="/patient">Patient</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Settings</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>

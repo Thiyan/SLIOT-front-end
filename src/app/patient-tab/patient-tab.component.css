@@ -6,6 +6,10 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+.my-card3 :hover {
+  cursor: pointer;
+}
+
 .s-body-circle img {
   border-radius: 50%;
   border: solid 2px #86ada9;
@@ -46,6 +50,11 @@ a {
   color: rgba(75, 78, 82, 0.404);
   font-size: 1.8em;
 }
+
+.status {
+  color: rgba(31, 74, 216, 0.863);
+}
+
 .see {
-  color: rgba(22, 40, 97, 0.801) 9;
+  color: rgb(75, 78, 82);
 }

@@ -9,7 +9,7 @@ export class MqttDataService {
 
   constructor() {
     this.client = new Paho.MQTT.Client(
-      "mqtt.senzmate.com",
+      "broker.mqttdashboard.com",
       8000,
       "qwerty1234567890"
     );

@@ -1,3 +1,4 @@
+import { MqttDataService } from "./services/mqtt-data.service";
 import { Component } from "@angular/core";
 
 @Component({
@@ -8,7 +9,7 @@ import { Component } from "@angular/core";
 export class AppComponent {
   title = "senzgraph";
 
-  constructor() {}
+  constructor(private mqttDataService: MqttDataService) {}
 
   // send() {
   //   this.mqttDataService.sendMessage();

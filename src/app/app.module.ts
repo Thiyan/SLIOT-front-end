@@ -18,6 +18,7 @@ import { UserImageComponent } from "./user-image/user-image.component";
 import { NavBarComponent } from "./nav-bar/nav-bar.component";
 import { PatientsComponent } from "./patients/patients.component";
 import { PatientTabComponent } from "./patient-tab/patient-tab.component";
+import { MqttDataService } from "./services/mqtt-data.service";
 
 @NgModule({
   declarations: [
@@ -53,7 +54,7 @@ import { PatientTabComponent } from "./patient-tab/patient-tab.component";
       }
     ])
   ],
-  providers: [],
+  providers: [MqttDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

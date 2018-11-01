@@ -22,7 +22,7 @@ export class MqttDataService {
   onConnected() {
     console.log("Connected");
     this.client.subscribe("123456");
-    this.sendMessage("HelloWorld");
+    this.sendMessage('{"I":"D1","T":36.5}');
   }
 
   sendMessage(message: string) {
@@ -34,6 +34,7 @@ export class MqttDataService {
   onMessage() {
     this.client.onMessageArrived = (message: Paho.MQTT.Message) => {
       console.log("Message arrived : " + message.payloadString);
+      JSON.parse(message.payloadString);
     };
   }
 
